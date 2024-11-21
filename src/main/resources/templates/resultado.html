@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Resultado</title>
+</head>
+<body>
+    <h1>Datos Enviados</h1>
+    <p><strong>Nombre:</strong> <span th:text="${formulario.nombre}"></span></p>
+    <p><strong>Edad:</strong> <span th:text="${formulario.edad}"></span></p>
+    <p><strong>Color Seleccionado:</strong> <span th:text="${formulario.color}"></span></p>
+    <a th:href="@{/formulario}">Volver al formulario</a>
+</body>
+</html>
